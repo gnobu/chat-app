@@ -6,9 +6,8 @@ const userSchema = mongoose.Schema({
     email: { type: String, required: true, unique: true },
     password: { type: String, required: true },
     pic: {
-        type: String,
-        // default: "https://icon-library.com/images/anonymous-avatar-icon/anonymous-avatar-icon-25.jpg"
-        default: "nceyxs5eeov6mnv65fa3"
+        p_id: { type: String, default: "nceyxs5eeov6mnv65fa3" },
+        version: { type: String, default: "1660898522" }
     }
 }, { timestamps: true });
 

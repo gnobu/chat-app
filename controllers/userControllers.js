@@ -27,7 +27,8 @@ const registerUser = expressAsyncHandler(async (req, res) => {
         name,
         email,
         password: hashedPassword,
-        pic: pic?.public_id,
+        // pic: pic?.public_id,
+        pic: {p_id: pic?.public_id, version: pic?.version},
     })
 
     if (user) {
